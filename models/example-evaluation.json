@@ -1,0 +1,2130 @@
+{
+  "evaluatedAt": "2026-10-07T12:25:15.499Z",
+  "modelVersion": "human-b58c2933",
+  "modelTrainedAt": "2026-10-07T11:03:14.299082+00:00",
+  "controllerSha256": "0b44373b31c337081065085b99ad04d4659329253543f03ec1bac2b83807a51b",
+  "bridgeSha256": "00d7e40acb4cb60f34afe7fc053588974fd98d7e05b485bb31d85ceb47a9711d",
+  "baseline": "previous",
+  "difficulty": "Hard CPU",
+  "timeLimitSeconds": 60,
+  "conditions": "Unmodified rules and normal keyboard input; randomly chosen native spawn positions; independent trials, not identical seeded matches.",
+  "summary": {
+    "previous": {
+      "matches": 18,
+      "wins": 13,
+      "losses": 5,
+      "draws": 0,
+      "timeouts": 0,
+      "meanEnemyDamage": 78.98967948717973,
+      "meanRemainingHp": 46.750057693044816,
+      "meanDamageAdvantage": 25.739737180224537,
+      "favorableDamageTrades": 13,
+      "bulletsSpent": 232.00000000000006,
+      "pickups": 6,
+      "grenadesSpent": 0,
+      "blockedShotCommands": 74,
+      "recoveryShotCommands": 89,
+      "decisions": {
+        "Waiting for an active match": 2144,
+        "Following learned routes and movement choices": 3041,
+        "Turning for a clear shot": 32,
+        "Learned positioning · tracking a clear shot": 1907,
+        "Releasing an aligned shot": 179,
+        "Learned approach · timing a close-range combo": 1300,
+        "Keeping the learned route clear of a dangerous drop": 98,
+        "Steering back toward solid ground": 30,
+        "Collecting ammunition and a new weapon": 8,
+        "Rolling to extinguish fire": 525
+      }
+    },
+    "learned": {
+      "matches": 18,
+      "wins": 14,
+      "losses": 4,
+      "draws": 0,
+      "timeouts": 0,
+      "meanEnemyDamage": 87.86666666666666,
+      "meanRemainingHp": 40.93913165266093,
+      "meanDamageAdvantage": 28.8057983193276,
+      "favorableDamageTrades": 14,
+      "bulletsSpent": 124,
+      "pickups": 1,
+      "grenadesSpent": 0,
+      "blockedShotCommands": 0,
+      "recoveryShotCommands": 0,
+      "decisions": {
+        "Waiting for an active match": 2245,
+        "Turning before committing ammunition": 28,
+        "Holding fire while the CPU recovers": 382,
+        "enemy": 122,
+        "Tracking a target before spending ammunition": 834,
+        "trap": 1,
+        "cancelAim": 59,
+        "navigation": 2785,
+        "Closing aggressively for a melee combo": 11,
+        "Diving into a close-range opening": 6,
+        "Queueing a jump kick at close range": 153,
+        "Keeping close-range melee pressure on the CPU": 892,
+        "pickup": 2,
+        "Steering back toward solid ground": 1,
+        "hazard": 1,
+        "Moving away from spreading fire": 1
+      }
+    }
+  },
+  "results": [
+    {
+      "map": 2,
+      "controller": "previous",
+      "round": 0,
+      "arena": 1,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 39.09999999999994,
+      "enemyHp": 0,
+      "damageAdvantage": 39.09999999999994,
+      "wallSeconds": 17.4,
+      "gameMilliseconds": 17380,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 368,
+          "y": 140.5
+        },
+        {
+          "id": 1,
+          "x": 423,
+          "y": 188.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 361.05,
+          "y": 140.55
+        },
+        {
+          "id": 1,
+          "x": 372.4,
+          "y": 140.55
+        }
+      ],
+      "ammo": 5,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 2,
+        "bulletsSpent": 7,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 1,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 127,
+          "Following learned routes and movement choices": 81,
+          "Turning for a clear shot": 8,
+          "Learned positioning · tracking a clear shot": 70,
+          "Releasing an aligned shot": 5,
+          "Learned approach · timing a close-range combo": 179
+        }
+      }
+    },
+    {
+      "map": 2,
+      "controller": "learned",
+      "round": 0,
+      "arena": 1,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 13.999999999999968,
+      "damageAdvantage": -13.999999999999968,
+      "wallSeconds": 19.4,
+      "gameMilliseconds": 19381,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 269.65,
+          "y": 143.5
+        },
+        {
+          "id": 1,
+          "x": 149,
+          "y": 182.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 197.1,
+          "y": 272.5
+        },
+        {
+          "id": 1,
+          "x": 204.35,
+          "y": 250.5
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 2,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 136,
+          "Turning before committing ammunition": 1,
+          "Holding fire while the CPU recovers": 55,
+          "enemy": 11,
+          "Tracking a target before spending ammunition": 71,
+          "trap": 1,
+          "cancelAim": 3,
+          "navigation": 192,
+          "Closing aggressively for a melee combo": 2,
+          "Diving into a close-range opening": 2,
+          "Queueing a jump kick at close range": 27,
+          "Keeping close-range melee pressure on the CPU": 20
+        }
+      }
+    },
+    {
+      "map": 3,
+      "controller": "previous",
+      "round": 0,
+      "arena": 2,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 100,
+      "damageAdvantage": -100,
+      "wallSeconds": 20,
+      "gameMilliseconds": 19974,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 235,
+          "y": 81.5
+        },
+        {
+          "id": 1,
+          "x": 258,
+          "y": 283.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 262.35,
+          "y": 179.85
+        },
+        {
+          "id": 1,
+          "x": 129.15,
+          "y": 94.5
+        }
+      ],
+      "ammo": 10,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 2,
+        "bulletsSpent": 2,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 2,
+        "recoveryShotCommands": 1,
+        "decisions": {
+          "Waiting for an active match": 135,
+          "Following learned routes and movement choices": 188,
+          "Keeping the learned route clear of a dangerous drop": 6,
+          "Steering back toward solid ground": 2,
+          "Turning for a clear shot": 2,
+          "Learned positioning · tracking a clear shot": 201,
+          "Releasing an aligned shot": 2
+        }
+      }
+    },
+    {
+      "map": 3,
+      "controller": "learned",
+      "round": 0,
+      "arena": 2,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 94.23999999999907,
+      "enemyHp": 0,
+      "damageAdvantage": 94.23999999999907,
+      "wallSeconds": 17.4,
+      "gameMilliseconds": 17384,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 94,
+          "y": 94.5
+        },
+        {
+          "id": 1,
+          "x": 98,
+          "y": 277.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 155.35,
+          "y": 277.55
+        },
+        {
+          "id": 1,
+          "x": 179.85,
+          "y": 277.5
+        }
+      ],
+      "ammo": 10,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 3,
+        "bulletsSpent": 2,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 128,
+          "navigation": 119,
+          "Queueing a jump kick at close range": 3,
+          "Keeping close-range melee pressure on the CPU": 176,
+          "Tracking a target before spending ammunition": 25,
+          "enemy": 2,
+          "Holding fire while the CPU recovers": 15,
+          "cancelAim": 3
+        }
+      }
+    },
+    {
+      "map": 5,
+      "controller": "previous",
+      "round": 0,
+      "arena": 4,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 96.59437180814201,
+      "enemyHp": 0,
+      "damageAdvantage": 96.59437180814201,
+      "wallSeconds": 3.6,
+      "gameMilliseconds": 3567,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 430,
+          "y": 173.5
+        },
+        {
+          "id": 1,
+          "x": 244.25,
+          "y": 197.95
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 432,
+          "y": 173.5
+        },
+        {
+          "id": 1,
+          "x": 277.7,
+          "y": 331.65
+        }
+      ],
+      "ammo": 8,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 4,
+        "bulletsSpent": 4,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 3,
+        "recoveryShotCommands": 5,
+        "decisions": {
+          "Waiting for an active match": 85,
+          "Turning for a clear shot": 1,
+          "Learned positioning · tracking a clear shot": 27,
+          "Releasing an aligned shot": 4,
+          "Following learned routes and movement choices": 8,
+          "Keeping the learned route clear of a dangerous drop": 1
+        }
+      }
+    },
+    {
+      "map": 5,
+      "controller": "learned",
+      "round": 0,
+      "arena": 4,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 10,
+      "enemyHp": 0,
+      "damageAdvantage": 10,
+      "wallSeconds": 9.2,
+      "gameMilliseconds": 9184,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 157,
+          "y": 129.5
+        },
+        {
+          "id": 1,
+          "x": 104,
+          "y": 285.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 67.25,
+          "y": 119.15
+        },
+        {
+          "id": 1,
+          "x": 31.8,
+          "y": 249.55
+        }
+      ],
+      "ammo": 2,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 5,
+        "bulletsSpent": 10,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 131,
+          "navigation": 59,
+          "Closing aggressively for a melee combo": 1,
+          "Tracking a target before spending ammunition": 65,
+          "enemy": 10
+        }
+      }
+    },
+    {
+      "map": 4,
+      "controller": "learned",
+      "round": 0,
+      "arena": 3,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 71.79294117646941,
+      "enemyHp": 0,
+      "damageAdvantage": 71.79294117646941,
+      "wallSeconds": 33.7,
+      "gameMilliseconds": 33733,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 782,
+          "y": 167.5
+        },
+        {
+          "id": 1,
+          "x": 571,
+          "y": 365.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 479.25,
+          "y": 365.55
+        },
+        {
+          "id": 1,
+          "x": 487.45,
+          "y": 365.5
+        }
+      ],
+      "ammo": 3,
+      "weapon": "BAZOOKA",
+      "metrics": {
+        "roundId": 3,
+        "bulletsSpent": 0,
+        "grenadesSpent": 0,
+        "pickups": 1,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 135,
+          "navigation": 559,
+          "pickup": 2,
+          "Closing aggressively for a melee combo": 1,
+          "Diving into a close-range opening": 1,
+          "Keeping close-range melee pressure on the CPU": 129,
+          "Queueing a jump kick at close range": 52,
+          "Steering back toward solid ground": 1
+        }
+      }
+    },
+    {
+      "map": 4,
+      "controller": "previous",
+      "round": 0,
+      "arena": 3,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 100,
+      "damageAdvantage": -100,
+      "wallSeconds": 40.6,
+      "gameMilliseconds": 40594,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 588,
+          "y": 257.55
+        },
+        {
+          "id": 1,
+          "x": 502,
+          "y": 350.7
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 518.45,
+          "y": 365.5
+        },
+        {
+          "id": 1,
+          "x": 561.15,
+          "y": 154.3
+        }
+      ],
+      "ammo": 7,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 3,
+        "bulletsSpent": 5,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 4,
+        "recoveryShotCommands": 2,
+        "decisions": {
+          "Waiting for an active match": 84,
+          "Following learned routes and movement choices": 611,
+          "Keeping the learned route clear of a dangerous drop": 46,
+          "Steering back toward solid ground": 7,
+          "Learned positioning · tracking a clear shot": 255,
+          "Turning for a clear shot": 7,
+          "Releasing an aligned shot": 4,
+          "Learned approach · timing a close-range combo": 37
+        }
+      }
+    },
+    {
+      "map": 6,
+      "controller": "previous",
+      "round": 0,
+      "arena": 5,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 45,
+      "enemyHp": 0,
+      "damageAdvantage": 45,
+      "wallSeconds": 10.2,
+      "gameMilliseconds": 10223,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 541,
+          "y": 106.5
+        },
+        {
+          "id": 1,
+          "x": 309,
+          "y": 200
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 552.55,
+          "y": 106.55
+        },
+        {
+          "id": 1,
+          "x": 377.3,
+          "y": 155.35
+        }
+      ],
+      "ammo": 15,
+      "weapon": "RIFLE",
+      "metrics": {
+        "roundId": 6,
+        "bulletsSpent": 22,
+        "grenadesSpent": 0,
+        "pickups": 1,
+        "blockedShotCommands": 6,
+        "recoveryShotCommands": 3,
+        "decisions": {
+          "Waiting for an active match": 127,
+          "Following learned routes and movement choices": 35,
+          "Keeping the learned route clear of a dangerous drop": 2,
+          "Turning for a clear shot": 1,
+          "Learned positioning · tracking a clear shot": 112,
+          "Releasing an aligned shot": 14,
+          "Collecting ammunition and a new weapon": 2
+        }
+      }
+    },
+    {
+      "map": 6,
+      "controller": "learned",
+      "round": 0,
+      "arena": 5,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 93.59999999999991,
+      "enemyHp": 0,
+      "damageAdvantage": 93.59999999999991,
+      "wallSeconds": 13.3,
+      "gameMilliseconds": 13268,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 309,
+          "y": 200
+        },
+        {
+          "id": 1,
+          "x": 268,
+          "y": 210.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 291.75,
+          "y": 208.5
+        },
+        {
+          "id": 1,
+          "x": 280.6,
+          "y": 210.55
+        }
+      ],
+      "ammo": 10,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 4,
+        "bulletsSpent": 2,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 136,
+          "Turning before committing ammunition": 1,
+          "Holding fire while the CPU recovers": 44,
+          "cancelAim": 7,
+          "navigation": 45,
+          "Keeping close-range melee pressure on the CPU": 116,
+          "Tracking a target before spending ammunition": 18,
+          "enemy": 2
+        }
+      }
+    },
+    {
+      "map": 7,
+      "controller": "learned",
+      "round": 0,
+      "arena": 6,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 20,
+      "enemyHp": 0,
+      "damageAdvantage": 20,
+      "wallSeconds": 9.3,
+      "gameMilliseconds": 9257,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 344,
+          "y": 167.5
+        },
+        {
+          "id": 1,
+          "x": 426,
+          "y": 230.4
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 352.5,
+          "y": 167.5
+        },
+        {
+          "id": 1,
+          "x": 455.65,
+          "y": 250.5
+        }
+      ],
+      "ammo": 1,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 7,
+        "bulletsSpent": 11,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 130,
+          "Holding fire while the CPU recovers": 52,
+          "enemy": 11,
+          "Tracking a target before spending ammunition": 67,
+          "cancelAim": 3,
+          "navigation": 5
+        }
+      }
+    },
+    {
+      "map": 2,
+      "controller": "learned",
+      "round": 1,
+      "arena": 1,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 40,
+      "enemyHp": 0,
+      "damageAdvantage": 40,
+      "wallSeconds": 8.2,
+      "gameMilliseconds": 8191,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 212,
+          "y": 143.5
+        },
+        {
+          "id": 1,
+          "x": 244,
+          "y": 143.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 210.5,
+          "y": 128.65
+        },
+        {
+          "id": 1,
+          "x": 258.3,
+          "y": 192.65
+        }
+      ],
+      "ammo": 2,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 5,
+        "bulletsSpent": 10,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 132,
+          "Closing aggressively for a melee combo": 1,
+          "Diving into a close-range opening": 1,
+          "Queueing a jump kick at close range": 5,
+          "navigation": 19,
+          "Holding fire while the CPU recovers": 5,
+          "cancelAim": 3,
+          "Turning before committing ammunition": 1,
+          "Tracking a target before spending ammunition": 63,
+          "enemy": 10
+        }
+      }
+    },
+    {
+      "map": 7,
+      "controller": "previous",
+      "round": 0,
+      "arena": 6,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 52.74000000000023,
+      "enemyHp": 0,
+      "damageAdvantage": 52.74000000000023,
+      "wallSeconds": 21.5,
+      "gameMilliseconds": 21511,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 426,
+          "y": 230.4
+        },
+        {
+          "id": 1,
+          "x": 345,
+          "y": 211.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 557.2,
+          "y": 228.5
+        },
+        {
+          "id": 1,
+          "x": 585.55,
+          "y": 250.5
+        }
+      ],
+      "ammo": 28,
+      "weapon": "SHOTGUN",
+      "metrics": {
+        "roundId": 4,
+        "bulletsSpent": 16,
+        "grenadesSpent": 0,
+        "pickups": 1,
+        "blockedShotCommands": 8,
+        "recoveryShotCommands": 9,
+        "decisions": {
+          "Waiting for an active match": 127,
+          "Following learned routes and movement choices": 164,
+          "Learned positioning · tracking a clear shot": 90,
+          "Releasing an aligned shot": 13,
+          "Turning for a clear shot": 2,
+          "Learned approach · timing a close-range combo": 173,
+          "Collecting ammunition and a new weapon": 6
+        }
+      }
+    },
+    {
+      "map": 3,
+      "controller": "learned",
+      "round": 1,
+      "arena": 2,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 50,
+      "enemyHp": 0,
+      "damageAdvantage": 50,
+      "wallSeconds": 12.3,
+      "gameMilliseconds": 12275,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 162,
+          "y": 94.5
+        },
+        {
+          "id": 1,
+          "x": 98,
+          "y": 277.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 237,
+          "y": 194.55
+        },
+        {
+          "id": 1,
+          "x": 204.8,
+          "y": 289.8
+        }
+      ],
+      "ammo": 1,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 6,
+        "bulletsSpent": 11,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 124,
+          "navigation": 114,
+          "Queueing a jump kick at close range": 2,
+          "Keeping close-range melee pressure on the CPU": 3,
+          "Tracking a target before spending ammunition": 79,
+          "enemy": 11,
+          "cancelAim": 1,
+          "Turning before committing ammunition": 1,
+          "Holding fire while the CPU recovers": 7
+        }
+      }
+    },
+    {
+      "map": 2,
+      "controller": "previous",
+      "round": 1,
+      "arena": 1,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 91.34576923076769,
+      "damageAdvantage": -91.34576923076769,
+      "wallSeconds": 21,
+      "gameMilliseconds": 20967,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 368,
+          "y": 232.5
+        },
+        {
+          "id": 1,
+          "x": 395,
+          "y": 140.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 384.3,
+          "y": 254.5
+        },
+        {
+          "id": 1,
+          "x": 364.3,
+          "y": 254.5
+        }
+      ],
+      "ammo": 7,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 8,
+        "bulletsSpent": 5,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 1,
+        "decisions": {
+          "Waiting for an active match": 129,
+          "Following learned routes and movement choices": 54,
+          "Turning for a clear shot": 1,
+          "Learned positioning · tracking a clear shot": 21,
+          "Releasing an aligned shot": 1,
+          "Rolling to extinguish fire": 355
+        }
+      }
+    },
+    {
+      "map": 3,
+      "controller": "previous",
+      "round": 1,
+      "arena": 2,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 10,
+      "damageAdvantage": -10,
+      "wallSeconds": 11.3,
+      "gameMilliseconds": 11263,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 144,
+          "y": 277.55
+        },
+        {
+          "id": 1,
+          "x": 285,
+          "y": 193.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 154.3,
+          "y": 277.5
+        },
+        {
+          "id": 1,
+          "x": 226.55,
+          "y": 204.65
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 5,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 3,
+        "recoveryShotCommands": 1,
+        "decisions": {
+          "Waiting for an active match": 136,
+          "Following learned routes and movement choices": 74,
+          "Keeping the learned route clear of a dangerous drop": 3,
+          "Turning for a clear shot": 1,
+          "Learned positioning · tracking a clear shot": 89,
+          "Releasing an aligned shot": 11,
+          "Steering back toward solid ground": 4
+        }
+      }
+    },
+    {
+      "map": 4,
+      "controller": "learned",
+      "round": 1,
+      "arena": 3,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 60,
+      "enemyHp": 0,
+      "damageAdvantage": 60,
+      "wallSeconds": 11.8,
+      "gameMilliseconds": 11766,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 571,
+          "y": 365.55
+        },
+        {
+          "id": 1,
+          "x": 750,
+          "y": 383.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 576.4,
+          "y": 365.55
+        },
+        {
+          "id": 1,
+          "x": 523.7,
+          "y": 365.5
+        }
+      ],
+      "ammo": 4,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 7,
+        "bulletsSpent": 8,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 126,
+          "navigation": 69,
+          "Holding fire while the CPU recovers": 27,
+          "cancelAim": 3,
+          "Closing aggressively for a melee combo": 3,
+          "Tracking a target before spending ammunition": 58,
+          "enemy": 8,
+          "Keeping close-range melee pressure on the CPU": 36
+        }
+      }
+    },
+    {
+      "map": 5,
+      "controller": "learned",
+      "round": 1,
+      "arena": 4,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 4.400000000000006,
+      "damageAdvantage": -4.400000000000006,
+      "wallSeconds": 16.4,
+      "gameMilliseconds": 16357,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 495,
+          "y": 173.5
+        },
+        {
+          "id": 1,
+          "x": 402,
+          "y": 295.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 325.35,
+          "y": 331.9
+        },
+        {
+          "id": 1,
+          "x": 439.8,
+          "y": 300.25
+        }
+      ],
+      "ammo": 6,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 6,
+        "bulletsSpent": 6,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 81,
+          "navigation": 218,
+          "Keeping close-range melee pressure on the CPU": 61,
+          "Tracking a target before spending ammunition": 58,
+          "enemy": 6,
+          "Holding fire while the CPU recovers": 12,
+          "cancelAim": 3,
+          "Queueing a jump kick at close range": 6,
+          "Closing aggressively for a melee combo": 1
+        }
+      }
+    },
+    {
+      "map": 4,
+      "controller": "previous",
+      "round": 1,
+      "arena": 3,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 74.09999999999971,
+      "enemyHp": 0,
+      "damageAdvantage": 74.09999999999971,
+      "wallSeconds": 18.4,
+      "gameMilliseconds": 18442,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 272,
+          "y": 377.55
+        },
+        {
+          "id": 1,
+          "x": 502,
+          "y": 351.7
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 252.55,
+          "y": 377.5
+        },
+        {
+          "id": 1,
+          "x": 270,
+          "y": 377.55
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 9,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 4,
+        "recoveryShotCommands": 6,
+        "decisions": {
+          "Waiting for an active match": 128,
+          "Learned positioning · tracking a clear shot": 76,
+          "Releasing an aligned shot": 13,
+          "Following learned routes and movement choices": 106,
+          "Learned approach · timing a close-range combo": 174
+        }
+      }
+    },
+    {
+      "map": 6,
+      "controller": "previous",
+      "round": 1,
+      "arena": 5,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 92.23999999999941,
+      "enemyHp": 0,
+      "damageAdvantage": 92.23999999999941,
+      "wallSeconds": 14.9,
+      "gameMilliseconds": 14852,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 89,
+          "y": 208.5
+        },
+        {
+          "id": 1,
+          "x": 443,
+          "y": 178.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 254.45,
+          "y": 210.55
+        },
+        {
+          "id": 1,
+          "x": 281.45,
+          "y": 210.55
+        }
+      ],
+      "ammo": 15,
+      "weapon": "RIFLE",
+      "metrics": {
+        "roundId": 10,
+        "bulletsSpent": 22,
+        "grenadesSpent": 0,
+        "pickups": 1,
+        "blockedShotCommands": 11,
+        "recoveryShotCommands": 8,
+        "decisions": {
+          "Waiting for an active match": 126,
+          "Following learned routes and movement choices": 81,
+          "Learned positioning · tracking a clear shot": 114,
+          "Releasing an aligned shot": 14,
+          "Learned approach · timing a close-range combo": 73
+        }
+      }
+    },
+    {
+      "map": 6,
+      "controller": "learned",
+      "round": 1,
+      "arena": 5,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 77.49999999999991,
+      "enemyHp": 0,
+      "damageAdvantage": 77.49999999999991,
+      "wallSeconds": 16.9,
+      "gameMilliseconds": 16889,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 142,
+          "y": 190.5
+        },
+        {
+          "id": 1,
+          "x": 414,
+          "y": 137.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 286.2,
+          "y": 210.55
+        },
+        {
+          "id": 1,
+          "x": 285.65,
+          "y": 210.5
+        }
+      ],
+      "ammo": 8,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 7,
+        "bulletsSpent": 4,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 136,
+          "navigation": 96,
+          "Tracking a target before spending ammunition": 43,
+          "hazard": 1,
+          "cancelAim": 9,
+          "Holding fire while the CPU recovers": 27,
+          "enemy": 3,
+          "Keeping close-range melee pressure on the CPU": 140,
+          "Closing aggressively for a melee combo": 1,
+          "Diving into a close-range opening": 1,
+          "Turning before committing ammunition": 1,
+          "Moving away from spreading fire": 1
+        }
+      }
+    },
+    {
+      "map": 5,
+      "controller": "previous",
+      "round": 1,
+      "arena": 4,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 76.83999999999725,
+      "damageAdvantage": -76.83999999999725,
+      "wallSeconds": 37.4,
+      "gameMilliseconds": 37428,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 320,
+          "y": 199.5
+        },
+        {
+          "id": 1,
+          "x": 378,
+          "y": 295.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 268.85,
+          "y": 336.05
+        },
+        {
+          "id": 1,
+          "x": 235.65,
+          "y": 197.55
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 8,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 8,
+        "decisions": {
+          "Waiting for an active match": 127,
+          "Learned positioning · tracking a clear shot": 80,
+          "Releasing an aligned shot": 12,
+          "Following learned routes and movement choices": 641,
+          "Steering back toward solid ground": 12,
+          "Learned approach · timing a close-range combo": 87,
+          "Keeping the learned route clear of a dangerous drop": 12
+        }
+      }
+    },
+    {
+      "map": 7,
+      "controller": "learned",
+      "round": 1,
+      "arena": 6,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 15,
+      "enemyHp": 0,
+      "damageAdvantage": 15,
+      "wallSeconds": 13.3,
+      "gameMilliseconds": 13297,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 554,
+          "y": 184.5
+        },
+        {
+          "id": 1,
+          "x": 345,
+          "y": 211.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 461.25,
+          "y": 250.5
+        },
+        {
+          "id": 1,
+          "x": 459.6,
+          "y": 250.55
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 11,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 128,
+          "navigation": 101,
+          "Holding fire while the CPU recovers": 40,
+          "enemy": 12,
+          "Tracking a target before spending ammunition": 60,
+          "cancelAim": 2,
+          "Queueing a jump kick at close range": 15,
+          "Keeping close-range melee pressure on the CPU": 11
+        }
+      }
+    },
+    {
+      "map": 7,
+      "controller": "previous",
+      "round": 1,
+      "arena": 6,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 43.40000000000002,
+      "enemyHp": 0,
+      "damageAdvantage": 43.40000000000002,
+      "wallSeconds": 16.9,
+      "gameMilliseconds": 16884,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 501,
+          "y": 184.5
+        },
+        {
+          "id": 1,
+          "x": 469,
+          "y": 144.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 531.8,
+          "y": 184.5
+        },
+        {
+          "id": 1,
+          "x": 493.05,
+          "y": 250.5
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 8,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 5,
+        "recoveryShotCommands": 9,
+        "decisions": {
+          "Waiting for an active match": 88,
+          "Turning for a clear shot": 2,
+          "Learned positioning · tracking a clear shot": 87,
+          "Releasing an aligned shot": 11,
+          "Following learned routes and movement choices": 140,
+          "Learned approach · timing a close-range combo": 131
+        }
+      }
+    },
+    {
+      "map": 2,
+      "controller": "previous",
+      "round": 2,
+      "arena": 1,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 80,
+      "enemyHp": 0,
+      "damageAdvantage": 80,
+      "wallSeconds": 9.7,
+      "gameMilliseconds": 9716,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 368,
+          "y": 232.5
+        },
+        {
+          "id": 1,
+          "x": 336,
+          "y": 254.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 363.65,
+          "y": 232.5
+        },
+        {
+          "id": 1,
+          "x": 296.45,
+          "y": 272.5
+        }
+      ],
+      "ammo": 1,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 9,
+        "bulletsSpent": 11,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 4,
+        "decisions": {
+          "Waiting for an active match": 130,
+          "Turning for a clear shot": 1,
+          "Learned positioning · tracking a clear shot": 78,
+          "Releasing an aligned shot": 11,
+          "Following learned routes and movement choices": 9,
+          "Learned approach · timing a close-range combo": 50
+        }
+      }
+    },
+    {
+      "map": 2,
+      "controller": "learned",
+      "round": 2,
+      "arena": 1,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 100,
+      "damageAdvantage": -100,
+      "wallSeconds": 15.4,
+      "gameMilliseconds": 15376,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 417,
+          "y": 232.5
+        },
+        {
+          "id": 1,
+          "x": 271,
+          "y": 272.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 379.6,
+          "y": 126.65
+        },
+        {
+          "id": 1,
+          "x": 191.4,
+          "y": 165.5
+        }
+      ],
+      "ammo": 12,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 12,
+        "bulletsSpent": 0,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 124,
+          "navigation": 262,
+          "Tracking a target before spending ammunition": 20,
+          "cancelAim": 15
+        }
+      }
+    },
+    {
+      "map": 3,
+      "controller": "previous",
+      "round": 2,
+      "arena": 2,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 82.29999999999902,
+      "enemyHp": 0,
+      "damageAdvantage": 82.29999999999902,
+      "wallSeconds": 27.2,
+      "gameMilliseconds": 27190,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 463,
+          "y": 193.5
+        },
+        {
+          "id": 1,
+          "x": 98,
+          "y": 277.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 256.8,
+          "y": 283.5
+        },
+        {
+          "id": 1,
+          "x": 191.55,
+          "y": 400.65
+        }
+      ],
+      "ammo": 1,
+      "weapon": "FLAMETHROWER",
+      "metrics": {
+        "roundId": 9,
+        "bulletsSpent": 42.00000000000007,
+        "grenadesSpent": 0,
+        "pickups": 2,
+        "blockedShotCommands": 19,
+        "recoveryShotCommands": 7,
+        "decisions": {
+          "Waiting for an active match": 76,
+          "Following learned routes and movement choices": 342,
+          "Learned positioning · tracking a clear shot": 251,
+          "Releasing an aligned shot": 18,
+          "Keeping the learned route clear of a dangerous drop": 25,
+          "Steering back toward solid ground": 3,
+          "Turning for a clear shot": 2
+        }
+      }
+    },
+    {
+      "map": 4,
+      "controller": "previous",
+      "round": 2,
+      "arena": 3,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 98.13999999999959,
+      "enemyHp": 0,
+      "damageAdvantage": 98.13999999999959,
+      "wallSeconds": 16.9,
+      "gameMilliseconds": 16897,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 821,
+          "y": 383.55
+        },
+        {
+          "id": 1,
+          "x": 675,
+          "y": 257.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 854.55,
+          "y": 383.5
+        },
+        {
+          "id": 1,
+          "x": 751.85,
+          "y": 383.55
+        }
+      ],
+      "ammo": 3,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 13,
+        "bulletsSpent": 9,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 6,
+        "decisions": {
+          "Waiting for an active match": 132,
+          "Following learned routes and movement choices": 106,
+          "Learned positioning · tracking a clear shot": 87,
+          "Releasing an aligned shot": 7,
+          "Learned approach · timing a close-range combo": 124,
+          "Turning for a clear shot": 3
+        }
+      }
+    },
+    {
+      "map": 3,
+      "controller": "learned",
+      "round": 2,
+      "arena": 2,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 35.87142857142862,
+      "enemyHp": 0,
+      "damageAdvantage": 35.87142857142862,
+      "wallSeconds": 32.8,
+      "gameMilliseconds": 32827,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 392,
+          "y": 301.55
+        },
+        {
+          "id": 1,
+          "x": 285,
+          "y": 193.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 414.65,
+          "y": 301.5
+        },
+        {
+          "id": 1,
+          "x": 408.05,
+          "y": 301.55
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 10,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 124,
+          "navigation": 527,
+          "Tracking a target before spending ammunition": 59,
+          "enemy": 12,
+          "Holding fire while the CPU recovers": 24,
+          "cancelAim": 2,
+          "Queueing a jump kick at close range": 35,
+          "Keeping close-range melee pressure on the CPU": 75
+        }
+      }
+    },
+    {
+      "map": 4,
+      "controller": "learned",
+      "round": 2,
+      "arena": 3,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 15,
+      "enemyHp": 0,
+      "damageAdvantage": 15,
+      "wallSeconds": 11.7,
+      "gameMilliseconds": 11724,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 600,
+          "y": 167.5
+        },
+        {
+          "id": 1,
+          "x": 738,
+          "y": 257.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 658.7,
+          "y": 167.55
+        },
+        {
+          "id": 1,
+          "x": 608.5,
+          "y": 167.55
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 10,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 126,
+          "navigation": 98,
+          "Tracking a target before spending ammunition": 84,
+          "enemy": 12,
+          "cancelAim": 2,
+          "Keeping close-range melee pressure on the CPU": 7
+        }
+      }
+    },
+    {
+      "map": 5,
+      "controller": "learned",
+      "round": 2,
+      "arena": 4,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 100,
+      "enemyHp": 0,
+      "damageAdvantage": 100,
+      "wallSeconds": 6.1,
+      "gameMilliseconds": 6144,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 430,
+          "y": 173.5
+        },
+        {
+          "id": 1,
+          "x": 378,
+          "y": 295.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 449.05,
+          "y": 160.65
+        },
+        {
+          "id": 1,
+          "x": 347.85,
+          "y": 338.85
+        }
+      ],
+      "ammo": 12,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 11,
+        "bulletsSpent": 0,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 85,
+          "navigation": 105
+        }
+      }
+    },
+    {
+      "map": 5,
+      "controller": "previous",
+      "round": 2,
+      "arena": 4,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 48.64666666666666,
+      "enemyHp": 0,
+      "damageAdvantage": 48.64666666666666,
+      "wallSeconds": 22.1,
+      "gameMilliseconds": 22082,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 248,
+          "y": 129.5
+        },
+        {
+          "id": 1,
+          "x": 402,
+          "y": 295.55
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 396.85,
+          "y": 295.55
+        },
+        {
+          "id": 1,
+          "x": 407.55,
+          "y": 295.55
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 14,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 4,
+        "recoveryShotCommands": 6,
+        "decisions": {
+          "Waiting for an active match": 126,
+          "Learned positioning · tracking a clear shot": 88,
+          "Releasing an aligned shot": 12,
+          "Following learned routes and movement choices": 224,
+          "Learned approach · timing a close-range combo": 95,
+          "Steering back toward solid ground": 2,
+          "Rolling to extinguish fire": 38,
+          "Keeping the learned route clear of a dangerous drop": 3
+        }
+      }
+    },
+    {
+      "map": 7,
+      "controller": "previous",
+      "round": 2,
+      "arena": 6,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 70,
+      "enemyHp": 0,
+      "damageAdvantage": 70,
+      "wallSeconds": 8.7,
+      "gameMilliseconds": 8673,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 544,
+          "y": 250.5
+        },
+        {
+          "id": 1,
+          "x": 297,
+          "y": 211.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 495.85,
+          "y": 250.5
+        },
+        {
+          "id": 1,
+          "x": 457.15,
+          "y": 250.5
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 15,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 3,
+        "decisions": {
+          "Waiting for an active match": 135,
+          "Following learned routes and movement choices": 31,
+          "Learned positioning · tracking a clear shot": 76,
+          "Releasing an aligned shot": 12
+        }
+      }
+    },
+    {
+      "map": 6,
+      "controller": "learned",
+      "round": 2,
+      "arena": 5,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 53.89999999999989,
+      "enemyHp": 0,
+      "damageAdvantage": 53.89999999999989,
+      "wallSeconds": 18.9,
+      "gameMilliseconds": 18947,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 268,
+          "y": 210.5
+        },
+        {
+          "id": 1,
+          "x": 414,
+          "y": 137.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 412.7,
+          "y": 190.55
+        },
+        {
+          "id": 1,
+          "x": 414.4,
+          "y": 190.5
+        }
+      ],
+      "ammo": 0,
+      "weapon": null,
+      "metrics": {
+        "roundId": 12,
+        "bulletsSpent": 12,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 129,
+          "Holding fire while the CPU recovers": 74,
+          "enemy": 12,
+          "Tracking a target before spending ammunition": 64,
+          "cancelAim": 3,
+          "navigation": 104,
+          "Closing aggressively for a melee combo": 1,
+          "Diving into a close-range opening": 1,
+          "Queueing a jump kick at close range": 4,
+          "Keeping close-range melee pressure on the CPU": 118
+        }
+      }
+    },
+    {
+      "map": 6,
+      "controller": "previous",
+      "round": 2,
+      "arena": 5,
+      "completed": true,
+      "winner": 0,
+      "outcome": "win",
+      "playerHp": 19.239999999999963,
+      "enemyHp": 0,
+      "damageAdvantage": 19.239999999999963,
+      "wallSeconds": 26.6,
+      "gameMilliseconds": 26602,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 268,
+          "y": 210.5
+        },
+        {
+          "id": 1,
+          "x": 443,
+          "y": 178.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 265.85,
+          "y": 210.55
+        },
+        {
+          "id": 1,
+          "x": 254.9,
+          "y": 210.55
+        }
+      ],
+      "ammo": 9,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 11,
+        "bulletsSpent": 15,
+        "grenadesSpent": 0,
+        "pickups": 1,
+        "blockedShotCommands": 4,
+        "recoveryShotCommands": 10,
+        "decisions": {
+          "Waiting for an active match": 126,
+          "Learned positioning · tracking a clear shot": 105,
+          "Releasing an aligned shot": 15,
+          "Following learned routes and movement choices": 146,
+          "Rolling to extinguish fire": 132,
+          "Learned approach · timing a close-range combo": 177,
+          "Turning for a clear shot": 1
+        }
+      }
+    },
+    {
+      "map": 7,
+      "controller": "learned",
+      "round": 2,
+      "arena": 6,
+      "completed": true,
+      "winner": 1,
+      "outcome": "loss",
+      "playerHp": 0,
+      "enemyHp": 100,
+      "damageAdvantage": -100,
+      "wallSeconds": 8.7,
+      "gameMilliseconds": 8668,
+      "initialPositions": [
+        {
+          "id": 0,
+          "x": 344,
+          "y": 167.5
+        },
+        {
+          "id": 1,
+          "x": 213,
+          "y": 231.5
+        }
+      ],
+      "finalPositions": [
+        {
+          "id": 0,
+          "x": 282.6,
+          "y": 211.5
+        },
+        {
+          "id": 1,
+          "x": 238.45,
+          "y": 212.8
+        }
+      ],
+      "ammo": 12,
+      "weapon": "PISTOL",
+      "metrics": {
+        "roundId": 16,
+        "bulletsSpent": 0,
+        "grenadesSpent": 0,
+        "pickups": 0,
+        "blockedShotCommands": 0,
+        "recoveryShotCommands": 0,
+        "decisions": {
+          "Waiting for an active match": 134,
+          "navigation": 93,
+          "Queueing a jump kick at close range": 4,
+          "Turning before committing ammunition": 23
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,65 @@
+{
+  "source": "Read-only sfWorld observation from the native Arena 1 game",
+  "traps": [
+    {
+      "active": false,
+      "bulletHazard": false,
+      "bulletTransparent": false,
+      "burning": false,
+      "explosive": false,
+      "height": 6.4,
+      "hp": 6,
+      "id": 124,
+      "indestructible": false,
+      "platform": {
+        "active": false,
+        "bulletHazard": false,
+        "bulletTransparent": false,
+        "burning": false,
+        "explosive": false,
+        "height": 17.3,
+        "hp": 40,
+        "id": 89,
+        "indestructible": true,
+        "type": "crate_hanging",
+        "width": 29.7,
+        "x": 302.2645904174769,
+        "y": 94.97206031898706
+      },
+      "type": "crate_hanging_holder",
+      "width": 9.25,
+      "x": 302.6165829098425,
+      "y": 86.97980773994155
+    },
+    {
+      "active": false,
+      "bulletHazard": false,
+      "bulletTransparent": false,
+      "burning": false,
+      "explosive": false,
+      "height": 6.2,
+      "hp": 6,
+      "id": 123,
+      "indestructible": false,
+      "platform": {
+        "active": false,
+        "bulletHazard": false,
+        "bulletTransparent": false,
+        "burning": false,
+        "explosive": false,
+        "height": 16.6,
+        "hp": 40,
+        "id": 88,
+        "indestructible": true,
+        "type": "crate_hanging",
+        "width": 29.4,
+        "x": 167.87073801254047,
+        "y": 130.98609071907399
+      },
+      "type": "crate_hanging_holder",
+      "width": 9.15,
+      "x": 168.05131236899027,
+      "y": 122.98812892235313
+    }
+  ]
+}
