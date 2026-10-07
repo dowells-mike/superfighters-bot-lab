@@ -1,0 +1,35 @@
+import {chromium} from 'playwright';
+import {serveLocal} from './local-server.mjs';
+import assert from 'node:assert/strict';
+import {readModelArtifact} from './model-store.mjs';
+const model=JSON.parse(await readModelArtifact(process.cwd(),'human-model.json'));
+const report=JSON.parse(await readModelArtifact(process.cwd(),'evaluation-report.json'));
+const {server,url}=await serveLocal(0,{recordingDirectory:'local-game/verification/recordings'});
+const browser=await chromium.launch({channel:'msedge',headless:true});
+try {
+  const page=await browser.newPage({viewport:{width:1200,height:900}}),errors=[];
+  page.on('pageerror',error=>errors.push(error.message));
+  await page.goto(url);
+  await page.waitForFunction(()=>document.getElementById('learning-status').textContent.includes('Learned from'));
+  assert.equal(await page.locator('#controller').inputValue(),'learned');
+  assert.ok((await page.locator('#controller option:checked').textContent()).includes('aggressive shooting'));
+  assert.equal(await page.locator('#bot').textContent(),'Start learned bot');
+  assert.ok((await page.locator('#learning-status').textContent()).includes(`${model.report.trainingMatches} matches`));
+  await page.waitForFunction(()=>document.getElementById('evaluation-status').textContent.includes('Latest Hard CPU test'));
+  assert.ok((await page.locator('#evaluation-status').textContent()).includes(`learned ${report.summary.learned.wins}/${report.summary.learned.matches}`));
+  if(Number.isFinite(report.summary.learned.meanDamageAdvantage))assert.ok((await page.locator('#evaluation-status').textContent()).includes('damage dealt minus taken'));
+  const box=await page.locator('ruffle-player').boundingBox();
+  await page.waitForTimeout(7000);
+  await page.mouse.click(box.x+box.width*.5,box.y+box.height*.875);
+  await page.waitForFunction(()=>window.sfLab?.state()?.bridgeVersion>=4,{},{timeout:30000});
+  assert.equal(await page.locator('#bot').isEnabled(),true);
+  await page.selectOption('#controller','previous');
+  assert.equal(await page.locator('#bot').textContent(),'Start previous learned bot');
+  await page.selectOption('#controller','starter');
+  assert.equal(await page.locator('#bot').textContent(),'Start starter bot');
+  await page.selectOption('#controller','learned');
+  assert.equal(await page.locator('#bot').textContent(),'Start learned bot');
+  assert.deepEqual(errors,[]);
+  await page.screenshot({path:'local-game/verification/learned-bot-ready.png',fullPage:true});
+  console.log('Verified: trained model, both controller choices, current live-test results, and playable game load.');
+} finally {await browser.close();await new Promise(resolve=>server.close(resolve));}
