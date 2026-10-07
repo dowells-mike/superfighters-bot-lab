@@ -1,0 +1,31 @@
+{
+  "name": "superfighters-bot-project",
+  "private": true,
+  "description": "A local Superfighters bot with recorded demonstrations, map-aware tactics, and offline learning.",
+  "license": "MIT",
+  "author": "dowells-mike",
+  "repository": { "type": "git", "url": "https://github.com/dowells-mike/superfighters-bot-lab.git" },
+  "type": "module",
+  "scripts": {
+    "local": "node local-runner.mjs",
+    "check:local": "node local-runner.mjs --check",
+    "build:bridge": "node build-bridge.mjs",
+    "prepare:game": "node prepare-game.mjs",
+    "test": "node --test local-launch.test.mjs recording.test.mjs learning.test.mjs tactics.test.mjs model-store.test.mjs",
+    "check:launcher": "node --test local-launch.test.mjs",
+    "check:recording": "node --test recording.test.mjs",
+    "train": "node train-bot.mjs",
+    "evaluate": "node evaluate-bots.mjs",
+    "check:learning": "node --test learning.test.mjs",
+    "check:tactics": "node --test tactics.test.mjs",
+    "check:tactics-native": "node verify-tactics-native.mjs",
+    "check:learning-ui": "node verify-learning-ui.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@ruffle-rs/ruffle": "0.6.0",
+    "playwright": "1.63.0"
+  }
+}

@@ -1,0 +1,26 @@
+node_modules/
+captures/
+npm-cache/
+snokido-page.html
+snokido-wrapper.html
+local-game/
+tools/
+.browser-profile/
+recordings/
+models/*
+!models/example-model.json
+!models/example-training-report.json
+!models/example-evaluation.json
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.publication/
+# Earlier capture/recovery tools are local development helpers.
+inspect.mjs
+recover-snapshots.mjs
+Start Setup.cmd

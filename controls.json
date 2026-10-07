@@ -1,0 +1,13 @@
+{
+  "up": "R",
+  "down": "F",
+  "left": "D",
+  "right": "G",
+  "melee": "S",
+  "shoot": "A",
+  "grenade": "Q",
+  "powerup": "W",
+  "jump": "R",
+  "crouch": "F",
+  "sprint": "Z"
+}

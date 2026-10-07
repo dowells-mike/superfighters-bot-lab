@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Superfighters Bot Lab</title>
+<style>
+:root{color-scheme:dark;font-family:Segoe UI,Arial,sans-serif;background:#10151e;color:#edf0f6}*{box-sizing:border-box}body{margin:0;padding:24px}header{max-width:1160px;margin:auto;display:flex;justify-content:space-between;align-items:center}h1{font-size:24px;margin:0 0 6px}p{color:#adb9c9;margin:0 0 20px;line-height:1.5}.layout{max-width:1160px;margin:20px auto;display:grid;grid-template-columns:minmax(0,800px) 320px;gap:20px}#game{width:800px;height:600px;background:#000;border-radius:10px;overflow:hidden}ruffle-player{width:100%;height:100%}aside{background:#192231;padding:20px;border-radius:12px}h2{font-size:17px;margin:0 0 16px}label{display:block;font-size:13px;color:#adb9c9;margin:12px 0 6px}select,button{font:inherit;border:1px solid #3a4a60;border-radius:7px;padding:10px;color:#edf0f6;background:#263449}select{width:100%}button{cursor:pointer;margin:10px 0 0;width:100%}button:disabled{opacity:.4;cursor:default}.primary{background:#306cdd;border-color:#306cdd}.danger{border-color:#be6b6b}#status{font-size:13px;color:#91b8ff;max-width:360px}#players{font-size:14px;line-height:1.6;margin-top:20px}.fighter{padding:12px 0;border-bottom:1px solid #344157}.small{font-size:12px;margin-top:18px}#keys{font-size:13px;color:#d6dfeb;line-height:1.8}#decision{font-size:13px;color:#91b8ff;min-height:32px;margin-top:15px}@media(max-width:1150px){.layout{display:block}aside{margin-top:20px}#game{max-width:100%;height:auto;aspect-ratio:4/3}}
+</style>
+<script>window.RufflePlayer={config:{autoplay:'on',unmuteOverlay:'hidden',allowScriptAccess:true,openUrlMode:'deny',preloader:false,quality:'high',scale:'showAll',logLevel:'error',publicPath:'/ruffle/'}};</script>
+<script src="/ruffle/ruffle.js"></script>
+</head>
+<body>
+<header><div><h1>Superfighters Bot Lab</h1><p>Your local game and bot development setup</p></div><div id="status">Loading the game…</div></header>
+<main class="layout">
+<section><div id="game"></div><p class="small">Click PLAY inside the game first. Then start a practice match using the panel. Click the game to play manually.</p></section>
+<aside><h2>Practice match</h2>
+<label for="map">Map</label><select id="map"><option value="2">Arena 1</option><option value="3">Arena 2</option><option value="4">Arena 3</option><option value="5">Arena 4</option><option value="6">Arena 5</option><option value="7">Arena 6</option></select>
+<label for="difficulty">Opponent</label><select id="difficulty"><option value="1">Easy CPU</option><option value="2">Normal CPU</option><option value="3" selected>Hard CPU</option></select>
+<button id="duel" class="primary" disabled>Start practice match</button>
+<button id="restart" disabled>Restart match</button>
+<label for="controller">Bot</label><select id="controller"><option value="learned" selected>Learned bot · aggressive shooting</option><option value="previous">Previous learned bot (comparison)</option><option value="starter">Starter bot (comparison)</option></select>
+<button id="bot" disabled>Start learned bot</button>
+<button id="stop" class="danger">Stop bot</button>
+<button id="export" disabled>Save snapshot</button>
+<div id="recording" class="small" role="status">Practice matches record automatically.</div>
+<div id="snapshot-status" class="small" role="status"></div>
+<div id="decision"></div><div id="players"></div>
+<p id="learning-status" class="small" role="status">Loading the learned controller…</p>
+<p id="evaluation-status" class="small" role="status"></p>
+<p class="small">Recording saves new examples. Run <strong>Train Bot.cmd</strong> after playing more matches to update the learned controller.</p>
+<h2 style="margin-top:24px">Your controls</h2><div id="keys"></div>
+</aside></main>
+<script type="module" src="/lab.mjs"></script>
+</body></html>
