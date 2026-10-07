@@ -1,0 +1,149 @@
+{
+  "trainedAt": "2026-10-07T11:03:14.299082+00:00",
+  "algorithm": "ExtraTreesClassifier",
+  "library": "1.7.2",
+  "datasetSha256": "b58c2933c0ee9deed2c3f241a95f6e53a26785860a78757e061a1594f28a3be7",
+  "target": "held game keys at next sample (15–250 ms ahead)",
+  "matches": 74,
+  "trainingMatches": 58,
+  "validationMatches": 16,
+  "trainingRows": 19205,
+  "validationRows": 5093,
+  "arenas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "validationMatchIds": [
+    "match-002",
+    "match-006",
+    "match-015",
+    "match-021",
+    "match-022",
+    "match-026",
+    "match-029",
+    "match-032",
+    "match-039",
+    "match-040",
+    "match-046",
+    "match-048",
+    "match-049",
+    "match-051",
+    "match-057",
+    "match-068"
+  ],
+  "trainingMatchIds": [
+    "match-001",
+    "match-003",
+    "match-004",
+    "match-005",
+    "match-007",
+    "match-008",
+    "match-009",
+    "match-010",
+    "match-011",
+    "match-012",
+    "match-013",
+    "match-014",
+    "match-016",
+    "match-017",
+    "match-018",
+    "match-019",
+    "match-020",
+    "match-023",
+    "match-024",
+    "match-025",
+    "match-027",
+    "match-028",
+    "match-030",
+    "match-031",
+    "match-033",
+    "match-034",
+    "match-035",
+    "match-036",
+    "match-037",
+    "match-038",
+    "match-041",
+    "match-042",
+    "match-043",
+    "match-044",
+    "match-045",
+    "match-047",
+    "match-050",
+    "match-052",
+    "match-053",
+    "match-054",
+    "match-055",
+    "match-056",
+    "match-058",
+    "match-059",
+    "match-060",
+    "match-061",
+    "match-062",
+    "match-063",
+    "match-064",
+    "match-065",
+    "match-066",
+    "match-067",
+    "match-069",
+    "match-070",
+    "match-071",
+    "match-072",
+    "match-073",
+    "match-074"
+  ],
+  "validationMicroF1": 0.6166930082035071,
+  "validationExactActionAccuracy": 0.38778715884547416,
+  "idleBaselineExactActionAccuracy": 0.22481837816611036,
+  "perAction": {
+    "up": {
+      "f1": 0.4743,
+      "examples": 449,
+      "threshold": 0.3
+    },
+    "down": {
+      "f1": 0.4425,
+      "examples": 524,
+      "threshold": 0.3
+    },
+    "left": {
+      "f1": 0.6354,
+      "examples": 1152,
+      "threshold": 0.3
+    },
+    "right": {
+      "f1": 0.6892,
+      "examples": 1487,
+      "threshold": 0.4
+    },
+    "melee": {
+      "f1": 0.5269,
+      "examples": 745,
+      "threshold": 0.3
+    },
+    "shoot": {
+      "f1": 0.6597,
+      "examples": 520,
+      "threshold": 0.5
+    },
+    "grenade": {
+      "f1": 0.5256,
+      "examples": 175,
+      "threshold": 0.3
+    },
+    "powerup": {
+      "f1": 0,
+      "examples": 0,
+      "threshold": 0.3
+    },
+    "sprint": {
+      "f1": 0.657,
+      "examples": 1511,
+      "threshold": 0.4
+    }
+  },
+  "meaning": "Predicting demonstration actions does not establish match win rate."
+}

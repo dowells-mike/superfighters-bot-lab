@@ -1,0 +1,131 @@
+{
+  "bridgeVersion": 2,
+  "difficulties": [
+    0,
+    3
+  ],
+  "inputHeld": [],
+  "keys": [
+    [
+      82,
+      70,
+      68,
+      71,
+      83,
+      65,
+      81,
+      87,
+      82,
+      70,
+      90
+    ],
+    [
+      87,
+      83,
+      65,
+      68,
+      49,
+      50,
+      51,
+      52,
+      87,
+      83,
+      0
+    ]
+  ],
+  "map": 2,
+  "menuDemo": false,
+  "mode": 1,
+  "playerInput": [],
+  "players": [
+    {
+      "aimLower": 90,
+      "aimMode": 0,
+      "aimPitch": 0,
+      "aimTurnDelay": false,
+      "aimUpper": 90,
+      "aimX": null,
+      "aimY": null,
+      "aiming": false,
+      "ammo": 12,
+      "bot": false,
+      "burn": 0,
+      "canGrab": true,
+      "climbing": false,
+      "facing": 1,
+      "gone": false,
+      "grenades": 3,
+      "hp": 100,
+      "id": 0,
+      "kneeling": false,
+      "knockedDown": false,
+      "meleeRange": 10,
+      "midX": 417,
+      "midY": 202.50000000000003,
+      "onGround": true,
+      "range": 300,
+      "sight": [
+        {
+          "aimAlignment": 0,
+          "clearShot": false,
+          "id": 1
+        }
+      ],
+      "stamina": 100,
+      "team": -1,
+      "vx": 0,
+      "vy": 0,
+      "weapon": "PISTOL",
+      "weaponCooldown": 0,
+      "x": 417,
+      "y": 210.5
+    },
+    {
+      "aimLower": 90,
+      "aimMode": 0,
+      "aimPitch": 0,
+      "aimTurnDelay": false,
+      "aimUpper": 90,
+      "aimX": null,
+      "aimY": null,
+      "aiming": false,
+      "ammo": 12,
+      "bot": true,
+      "burn": 0,
+      "canGrab": true,
+      "climbing": false,
+      "facing": 1,
+      "gone": false,
+      "grenades": 3,
+      "hp": 100,
+      "id": 1,
+      "kneeling": false,
+      "knockedDown": false,
+      "meleeRange": 10,
+      "midX": 130,
+      "midY": 246.30000000000004,
+      "onGround": true,
+      "range": 300,
+      "sight": [
+        {
+          "aimAlignment": 0.9222222222222223,
+          "clearShot": true,
+          "id": 0
+        }
+      ],
+      "stamina": 100,
+      "team": -2,
+      "vx": 0,
+      "vy": 0,
+      "weapon": "PISTOL",
+      "weaponCooldown": 0,
+      "x": 130,
+      "y": 254.3
+    }
+  ],
+  "ready": true,
+  "roundId": 2,
+  "roundOver": false,
+  "soloWinner": -1,
+  "timeMs": 33625
+}
